@@ -1,16 +1,92 @@
+<!doctype html>
+<html>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer community</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px'
+                },
+                extend: {
+                    colors: {
+                        myblue: '#3944F7',
+                        myred: '#EB4D4B',
+                        mygrey: '#758283'
+                    },
+                    boxShadow: {
+                        'navshadow': '0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8% )' ,
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
 
-    <h1>Web Development</h1>
-    
+    <!-- navbar -->
+    <div class="w-full ">
+
+        <nav class="relative   p-3 shadow-navshadow">
+            <div class="flex items-center justify-between">
+                <div class="pt-2 flex justify-center items-center">
+                    <img class="w-20"
+                        src="./assets/images (1).png"
+                        alt="">
+                        <div class="">Web Dev Commnunity</div>
+                </div>
+                <!-- <div class=" hidden md:flex space-x-6">
+                <a class="hover:text-white 
+                hover:underline hover:underline-offset-8" href="#">About us</a>
+                <a class="hover:text-white" href="#">Products</a>
+                <a class="hover:text-white" href="#">Pricing</a>
+                <a class="hover:text-white" href="#">Courses</a>
+                <a class="hover:text-white" href="#">Contact Us</a>
+            </div> -->
+                <div>
+                    <a class="border-myred border-2 px-7 py-2 bg-white text-myred rounded hover:bg-myred hover:text-white hover:border hover:border-2 hover:border-white"
+                        href="#">Login</a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Design a hero section -->
+
+    <section id="hero ">
+        <div class="w-full bg-gradient-to-r from-cyan-500 to-blue-500  md:h-[85.05vh] pt-8">
+        <div class="container flex flex-col-reverse items-center md:flex-row mx-auto md:space-x-6 ">
+            <div class=" flex flex-col md:w-1/2 space-y-4">
+                <h1 class="mt-4 max-w-md text-7xl font-bold  text-white text-center md:text-left  ">Web Dev Community</h1>
+                <p class="text-left text-gray-300 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam provident a minus, voluptates autem consectetur natus nobis unde amet dolorem, sed sequi. Quae debitis quod ad obcaecati quasi optio tempora?</p>
+                <div class="flex justify-center mt-4 md:justify-start">
+                    <a class="border-transparent border-2 px-7 bg-white text-myred rounded hover:bg-myred hover:text-white hover:border hover:border-2 hover:border-white" href="#">Let's Join</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center items-center">
+                <img class="rounded" src="https://pensillandingpage.vercel.app/static/media/jsc.a349787a54e629a134ea.gif" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+        
+
+    </div>
+
+
+
+
 </body>
+
 </html>
